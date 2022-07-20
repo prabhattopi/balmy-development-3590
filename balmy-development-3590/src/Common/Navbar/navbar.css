@@ -1,0 +1,248 @@
+.cardx{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    pointer-events: none;
+    transition:var(--transition);
+    -webkit-transition:var(--transition);
+    -moz-transition:var(--transition);
+    -ms-transition:var(--transition);
+    -o-transition:var(--transition);
+}
+.card{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: flex;
+    z-index: 2;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+.card::before{
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background: white;
+    width: 15px;
+    height: 15px;
+    left: 290px;
+    top:37px;
+    transform: translateX(5px) rotate(45deg);
+    -webkit-transform: translateX(5px) rotate(45deg);
+    -moz-transform: translateX(5px) rotate(45deg);
+    -ms-transform: translateX(5px) rotate(45deg);
+    -o-transform: translateX(5px) rotate(45deg);
+}
+.cardx2{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    pointer-events: none;
+    transition:all 0.4s ease-in;
+    -webkit-transition:all 0.4s ease-in;
+    -moz-transition:all 0.4s ease-in;
+    -ms-transition:all 0.4s ease-in;
+    -o-transition:all 0.4s ease-in;
+}
+.card2{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: flex;
+    z-index: 2;
+  
+   
+}
+.card2::before{
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background: white;
+    width: 15px;
+    height: 15px;
+    left: 360px;
+    top:37px;
+    transform: translateX(5px) rotate(45deg);
+    -webkit-transform: translateX(5px) rotate(45deg);
+    -moz-transform: translateX(5px) rotate(45deg);
+    -ms-transform: translateX(5px) rotate(45deg);
+    -o-transform: translateX(5px) rotate(45deg);
+}
+.cardx3{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    pointer-events: none;
+    transition:all 0.4s ease-in;
+    -webkit-transition:all 0.4s ease-in;
+    -moz-transition:all 0.4s ease-in;
+    -ms-transition:all 0.4s ease-in;
+    -o-transition:all 0.4s ease-in;
+}
+.card3{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: flex;
+    z-index: 2;
+  
+   
+}
+.card3::before{
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background: white;
+    width: 15px;
+    height: 15px;
+    left:410px;
+    top:37px;
+    transform: translateX(5px) rotate(45deg);
+    -webkit-transform: translateX(5px) rotate(45deg);
+    -moz-transform: translateX(5px) rotate(45deg);
+    -ms-transform: translateX(5px) rotate(45deg);
+    -o-transform: translateX(5px) rotate(45deg);
+}
+.cardx4{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    pointer-events: none;
+    transition:all 0.4s ease-in;
+    -webkit-transition:all 0.4s ease-in;
+    -moz-transition:all 0.4s ease-in;
+    -ms-transition:all 0.4s ease-in;
+    -o-transition:all 0.4s ease-in;
+}
+.card4{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: flex;
+    z-index: 2;
+  
+   
+}
+.card4::before{
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background: white;
+    width: 15px;
+    height: 15px;
+    left: 30rem;
+    top:37px;
+    transform: translateX(5px) rotate(45deg);
+    -webkit-transform: translateX(5px) rotate(45deg);
+    -moz-transform: translateX(5px) rotate(45deg);
+    -ms-transform: translateX(5px) rotate(45deg);
+    -o-transform: translateX(5px) rotate(45deg);
+}
+.cardx5{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    pointer-events: none;
+    transition:all 0.4s ease-in;
+    -webkit-transition:all 0.4s ease-in;
+    -moz-transition:all 0.4s ease-in;
+    -ms-transition:all 0.4s ease-in;
+    -o-transition:all 0.4s ease-in;
+}
+.card5{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: flex;
+    z-index: 2;
+  
+   
+}
+.card5::before{
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background: white;
+    width: 15px;
+    height: 15px;
+    left:34rem;
+    top:37px;
+    transform: translateX(5px) rotate(45deg);
+    -webkit-transform: translateX(5px) rotate(45deg);
+    -moz-transform: translateX(5px) rotate(45deg);
+    -ms-transform: translateX(5px) rotate(45deg);
+    -o-transform: translateX(5px) rotate(45deg);
+}
+.cardx6{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    pointer-events: none;
+    transition:all 0.4s ease-in;
+    -webkit-transition:all 0.4s ease-in;
+    -moz-transition:all 0.4s ease-in;
+    -ms-transition:all 0.4s ease-in;
+    -o-transition:all 0.4s ease-in;
+}
+.card6{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: flex;
+    z-index: 2;
+  
+   
+}
+.card6::before{
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background: white;
+    width: 15px;
+    height: 15px;
+    left: 39rem;
+    top:37px;
+    transform: translateX(5px) rotate(45deg);
+    -webkit-transform: translateX(5px) rotate(45deg);
+    -moz-transform: translateX(5px) rotate(45deg);
+    -ms-transform: translateX(5px) rotate(45deg);
+    -o-transform: translateX(5px) rotate(45deg);
+}
+.cardx7{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    pointer-events: none;
+    transition:all 0.4s ease-in;
+    -webkit-transition:all 0.4s ease-in;
+    -moz-transition:all 0.4s ease-in;
+    -ms-transition:all 0.4s ease-in;
+    -o-transition:all 0.4s ease-in;
+}
+.card7{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: flex;
+    z-index: 2;
+  
+   
+}
+.card7::before{
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background: white;
+    width: 15px;
+    height: 15px;
+    left: 43rem;
+    top:37px;
+    transform: translateX(5px) rotate(45deg);
+    -webkit-transform: translateX(5px) rotate(45deg);
+    -moz-transform: translateX(5px) rotate(45deg);
+    -ms-transform: translateX(5px) rotate(45deg);
+    -o-transform: translateX(5px) rotate(45deg);
+}
