@@ -1,7 +1,8 @@
 .cardx{
     opacity: 0;
     visibility: hidden;
-    display: none;
+    display: flex;
+    z-index: 1111111111;
     pointer-events: none;
     transition:var(--transition);
     -webkit-transition:var(--transition);
@@ -10,11 +11,12 @@
     -o-transition:var(--transition);
 }
 .card{
+    background: white;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     display: flex;
-    z-index: 2;
+    z-index: 60000;
     transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
@@ -22,14 +24,14 @@
     -o-transition: all 0.6s ease;
 }
 .card::before{
-    position: absolute;
-    z-index: 3;
+ position: relative;
+  
     content: "";
-    background: white;
+    background: rgb(251, 249, 249);
     width: 15px;
     height: 15px;
-    left: 290px;
-    top:37px;
+    left: 20px;
+    top:-17px;
     transform: translateX(5px) rotate(45deg);
     -webkit-transform: translateX(5px) rotate(45deg);
     -moz-transform: translateX(5px) rotate(45deg);
@@ -41,6 +43,7 @@
     visibility: hidden;
     display: none;
     pointer-events: none;
+    z-index: 1111111111;
     transition:all 0.4s ease-in;
     -webkit-transition:all 0.4s ease-in;
     -moz-transition:all 0.4s ease-in;
@@ -50,21 +53,23 @@
 .card2{
     opacity: 1;
     visibility: visible;
+    background: white;
     pointer-events: auto;
+    z-index: 60000;
     display: flex;
-    z-index: 2;
+   
   
    
 }
 .card2::before{
-    position: absolute;
-    z-index: 3;
+    position: relative;
+
     content: "";
     background: white;
     width: 15px;
     height: 15px;
-    left: 360px;
-    top:37px;
+    left: 3rem;
+    top:-17px;
     transform: translateX(5px) rotate(45deg);
     -webkit-transform: translateX(5px) rotate(45deg);
     -moz-transform: translateX(5px) rotate(45deg);
@@ -74,7 +79,7 @@
 .cardx3{
     opacity: 0;
     visibility: hidden;
-    display: none;
+    display:flex;
     pointer-events: none;
     transition:all 0.4s ease-in;
     -webkit-transition:all 0.4s ease-in;
@@ -84,6 +89,7 @@
 }
 .card3{
     opacity: 1;
+    background: white;
     visibility: visible;
     pointer-events: auto;
     display: flex;
@@ -92,14 +98,14 @@
    
 }
 .card3::before{
-    position: absolute;
+    position: relative;
     z-index: 3;
     content: "";
     background: white;
     width: 15px;
     height: 15px;
-    left:410px;
-    top:37px;
+    left:7rem;
+    top:-17px;
     transform: translateX(5px) rotate(45deg);
     -webkit-transform: translateX(5px) rotate(45deg);
     -moz-transform: translateX(5px) rotate(45deg);
@@ -109,7 +115,7 @@
 .cardx4{
     opacity: 0;
     visibility: hidden;
-    display: none;
+    display:flex;
     pointer-events: none;
     transition:all 0.4s ease-in;
     -webkit-transition:all 0.4s ease-in;
@@ -119,6 +125,7 @@
 }
 .card4{
     opacity: 1;
+       background: white;
     visibility: visible;
     pointer-events: auto;
     display: flex;
@@ -127,14 +134,14 @@
    
 }
 .card4::before{
-    position: absolute;
+    position:relative;
     z-index: 3;
     content: "";
     background: white;
     width: 15px;
     height: 15px;
-    left: 30rem;
-    top:37px;
+    left: 2rem;
+    top:-17px;
     transform: translateX(5px) rotate(45deg);
     -webkit-transform: translateX(5px) rotate(45deg);
     -moz-transform: translateX(5px) rotate(45deg);
@@ -143,8 +150,9 @@
 }
 .cardx5{
     opacity: 0;
+    background: white;
     visibility: hidden;
-    display: none;
+    display:flex;
     pointer-events: none;
     transition:all 0.4s ease-in;
     -webkit-transition:all 0.4s ease-in;
@@ -155,6 +163,7 @@
 .card5{
     opacity: 1;
     visibility: visible;
+    background: white;
     pointer-events: auto;
     display: flex;
     z-index: 2;
@@ -162,14 +171,14 @@
    
 }
 .card5::before{
-    position: absolute;
+    position: relative;
     z-index: 3;
     content: "";
     background: white;
     width: 15px;
     height: 15px;
-    left:34rem;
-    top:37px;
+    left:0rem;
+    top:-17px;
     transform: translateX(5px) rotate(45deg);
     -webkit-transform: translateX(5px) rotate(45deg);
     -moz-transform: translateX(5px) rotate(45deg);
@@ -179,7 +188,7 @@
 .cardx6{
     opacity: 0;
     visibility: hidden;
-    display: none;
+    display:flex;
     pointer-events: none;
     transition:all 0.4s ease-in;
     -webkit-transition:all 0.4s ease-in;
@@ -189,6 +198,7 @@
 }
 .card6{
     opacity: 1;
+    background: white;
     visibility: visible;
     pointer-events: auto;
     display: flex;
@@ -197,14 +207,14 @@
    
 }
 .card6::before{
-    position: absolute;
+    position: relative;
     z-index: 3;
     content: "";
     background: white;
     width: 15px;
     height: 15px;
-    left: 39rem;
-    top:37px;
+    left: 0rem;
+    top:-17px;
     transform: translateX(5px) rotate(45deg);
     -webkit-transform: translateX(5px) rotate(45deg);
     -moz-transform: translateX(5px) rotate(45deg);
@@ -214,7 +224,7 @@
 .cardx7{
     opacity: 0;
     visibility: hidden;
-    display: none;
+    display:flex;
     pointer-events: none;
     transition:all 0.4s ease-in;
     -webkit-transition:all 0.4s ease-in;
@@ -225,6 +235,7 @@
 .card7{
     opacity: 1;
     visibility: visible;
+    background: white;
     pointer-events: auto;
     display: flex;
     z-index: 2;
@@ -232,14 +243,14 @@
    
 }
 .card7::before{
-    position: absolute;
+    position: relative;
     z-index: 3;
     content: "";
     background: white;
     width: 15px;
     height: 15px;
-    left: 43rem;
-    top:37px;
+    left: 2rem;
+    top:-17px;
     transform: translateX(5px) rotate(45deg);
     -webkit-transform: translateX(5px) rotate(45deg);
     -moz-transform: translateX(5px) rotate(45deg);

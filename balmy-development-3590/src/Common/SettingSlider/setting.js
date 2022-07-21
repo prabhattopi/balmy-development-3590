@@ -1,13 +1,13 @@
 import { SmapleNextArrow } from "./Button"
 import { SmaplePrevArrow } from "./Button"
-
+import "./button.css"
 
 export const Settings={
 
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 2,
     nextArrow:<SmapleNextArrow/>,
     prevArrow:<SmaplePrevArrow/>,
@@ -15,8 +15,8 @@ export const Settings={
     {
         breakpoint: 1500,
         settings: {
-          slidesToShow:5,
-          slidesToScroll: 3,
+          slidesToShow:4,
+          slidesToScroll: 2,
           infinite: true,
           dots: false,
           
@@ -26,7 +26,7 @@ export const Settings={
         breakpoint: 1300,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: false,
           
@@ -36,8 +36,8 @@ export const Settings={
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
+            slidesToScroll: 2,
+            infinite:false,
             dots: false,
 
           }
@@ -47,7 +47,8 @@ export const Settings={
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            initialSlide: 2
+            initialslide:2
+        
           }
         },
         {
