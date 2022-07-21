@@ -1,5 +1,6 @@
 import { Box, HStack, Image, Spacer } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
+
 import React, { useState } from "react";
 import "./navbar.css";
 import Image1 from "../../Images/logo.png";
@@ -46,8 +47,11 @@ export const Navbar = () => {
 
           <Box display="flex" alignItems="center" gap="20px">
             <Box
+              zIndex="1000"
               onMouseMove={() => setCard1(true)}
-              onMouseOut={() => setCard1(false)}
+              onMouseOut={() => {
+                setCard1(false);
+              }}
             >
               <Link to="/" style={{ textDecoration: "none" }}>
                 Live Score
@@ -56,6 +60,7 @@ export const Navbar = () => {
             <Box
               onMouseMove={() => setCard2(true)}
               onMouseOut={() => setCard2(false)}
+              zIndex="1000"
             >
               <Link to="/" style={{ textDecoration: "none" }}>
                 Series
@@ -64,6 +69,7 @@ export const Navbar = () => {
             <Box
               onMouseMove={() => setCard3(true)}
               onMouseOut={() => setCard3(false)}
+              zIndex="1000"
             >
               <Link to="/" style={{ textDecoration: "none" }}>
                 Teams
@@ -72,6 +78,7 @@ export const Navbar = () => {
             <Box
               onMouseMove={() => setCard4(true)}
               onMouseOut={() => setCard4(false)}
+              zIndex="1000"
             >
               <Link to="/" style={{ textDecoration: "none" }}>
                 News
@@ -80,6 +87,7 @@ export const Navbar = () => {
             <Box
               onMouseMove={() => setCard5(true)}
               onMouseOut={() => setCard5(false)}
+              zIndex="1000"
             >
               <Link to="/" style={{ textDecoration: "none" }}>
                 Features
@@ -88,6 +96,7 @@ export const Navbar = () => {
             <Box
               onMouseMove={() => setCard6(true)}
               onMouseOut={() => setCard6(false)}
+              zIndex="1000"
             >
               <Link to="/" style={{ textDecoration: "none" }}>
                 Vedieos
@@ -96,6 +105,7 @@ export const Navbar = () => {
             <Box
               onMouseMove={() => setCard7(true)}
               onMouseOut={() => setCard7(false)}
+              zIndex="1000"
             >
               <Link to="/" style={{ textDecoration: "none" }}>
                 Stats
@@ -132,9 +142,11 @@ export const Navbar = () => {
       <Box>
         <Box
           className={card1 ? "card" : "cardx"}
+          position="absolute"
+          marginTop="0rem"
           w="300px"
           onMouseMove={() => setCard1(true)}
-          onMouseOut={() => setCard1(false)}
+          // onMouseOut={() => setCard1(false)}
           ml="15rem"
           p="2"
           shadow="md"
@@ -148,19 +160,22 @@ export const Navbar = () => {
         </Box>
 
         <Box
+     
           className={card2 ? "card2" : "cardx2"}
           onMouseMove={() => setCard2(true)}
-          onMouseOut={() => setCard2(false)}
+          // onMouseOut={() => setCard2(false)}
           flexDirection="column"
           height="200px"
           w="600px"
+          position="absolute"
+          marginTop="0rem"
+       
           ml="19rem"
           flexWrap="wrap"
           p="2"
           shadow="md"
           borderWidth="1px"
-          gap="15px"
-         
+          gap="10px"
         >
           {data2.map((e) => (
             <CardComponents key={e.id} item={e} />
@@ -169,8 +184,10 @@ export const Navbar = () => {
         <Box
           className={card3 ? "card3" : "cardx3"}
           onMouseMove={() => setCard3(true)}
-          onMouseOut={() => setCard3(false)}
+          // onMouseOut={() => setCard3(false)}
           flexDirection="column"
+          position="absolute"
+          marginTop="0rem"
           height="200px"
           w="600px"
           flexWrap="wrap"
@@ -187,8 +204,10 @@ export const Navbar = () => {
         <Box
           className={card4 ? "card4" : "cardx4"}
           onMouseMove={() => setCard4(true)}
-          onMouseOut={() => setCard4(false)}
+          // onMouseOut={() => setCard4(false)}
           flexDirection="column"
+          position="absolute"
+          marginTop="0rem"
           height="200px"
           w="600px"
           flexWrap="wrap"
@@ -205,8 +224,10 @@ export const Navbar = () => {
         <Box
           className={card5 ? "card5" : "cardx5"}
           onMouseMove={() => setCard5(true)}
-          onMouseOut={() => setCard5(false)}
+          // onMouseOut={() => setCard5(false)}
           flexDirection="column"
+          position="absolute"
+          marginTop="0rem"
           height="200px"
           w="600px"
           flexWrap="wrap"
@@ -223,8 +244,10 @@ export const Navbar = () => {
         <Box
           className={card6 ? "card6" : "cardx6"}
           onMouseMove={() => setCard6(true)}
-          onMouseOut={() => setCard6(false)}
+          // onMouseOut={() => setCard6(false)}
           flexDirection="column"
+          position="absolute"
+          marginTop="0rem"
           height="200px"
           w="600px"
           flexWrap="wrap"
@@ -241,9 +264,11 @@ export const Navbar = () => {
         <Box
           className={card7 ? "card7" : "cardx7"}
           onMouseMove={() => setCard7(true)}
-          onMouseOut={() => setCard7(false)}
+          // onMouseOut={() => setCard7(false)}
           flexDirection="column"
           height="200px"
+          position="absolute"
+          marginTop="0rem"
           w="600px"
           flexWrap="wrap"
           ml="40rem"

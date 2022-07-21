@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 export const CardComponents = ({item}) => {
   return (
    
-        <Box _hover={{backgroundColor:"gray.200"}} boxSize="border-box">
+        <Box _hover={{backgroundColor:"gray.200"}} boxSize="border-box" zIndex="50000000000000">
         <Link to={item.to}>{item.title}</Link>
         </Box>
     

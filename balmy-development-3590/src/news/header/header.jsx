@@ -1,7 +1,8 @@
 import React from 'react'
+import {Box} from "@chakra-ui/react"
 import "./header.css"
-export const header = () => {
+export const Header = () => {
   return (
-    <div>header</div>
+  <Box></Box>
   )
 }
