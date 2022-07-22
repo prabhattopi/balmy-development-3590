@@ -31,7 +31,7 @@ export const data3bodylive=[
     },
     {
         id:"6",
-        title:"South Tour of England",
+        title:"South Tour of Englan",
         status:false,
 
     },
