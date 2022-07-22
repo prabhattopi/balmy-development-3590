@@ -4,7 +4,7 @@ import { Navbar } from "./Common/Navbar/Navbar";
 import { Body } from "./home/body/Body";
 import { Footer } from "./Common/footer/Footer";
 // import { Header } from "./home/header/Header";
-import {Header} from "./liveScore/Header/Header"
+import {Header} from "./news/header/Header"
 
 function App() {
   return (

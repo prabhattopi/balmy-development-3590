@@ -9,7 +9,7 @@ import { BoxCard } from './BoxCard/BoxCard'
 import { Navbar } from '../../Common/Navbar/Navbar'
 import { Body } from '../body/Body'
 import { Data } from './Data/Data'
-export const Header = () => {
+export const HeaderHome = () => {
   
 
   // useEffect(()=>{
