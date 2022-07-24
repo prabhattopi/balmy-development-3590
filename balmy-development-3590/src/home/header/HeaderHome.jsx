@@ -1,5 +1,5 @@
 import { Box, Spacer,Text,Image,Link } from '@chakra-ui/react'
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./header.css"
 import axios from 'axios'
 import Slider from 'react-slick'
@@ -10,8 +10,28 @@ import { Navbar } from '../../Common/Navbar/Navbar'
 import { Body } from '../body/Body'
 import { Data } from './Data/Data'
 export const HeaderHome = () => {
+  const [dal,setdal]=useState(false)
+  const ref=useRef(null)
   
+  // window.addEventListener("scroll",()=>{
+   
+  //   setdal(true)
+   
+  
+  //   if(ref.current.scrollTop===0){
+  //     setdal(false)
+  //   }
+    
+    
+     
+     
+    
+    
+    
+    
+  // })
 
+  
   // useEffect(()=>{
   //   const getTodo=()=>{
   //     const options = {
@@ -34,7 +54,7 @@ export const HeaderHome = () => {
   // },[])
   return (
     <>
-   <Box bg="blue.500" height="250px" zIndex="-1">
+   <Box  ref={ref} bg="blue.500" height="250px" zIndex="-1" className={dal?"re":""}>
   <Box>
     <Box display="flex" justifyContent="space-around">
       <Box display="flex" ml="3rem" gap="20px" color="white" fontSize="16px" fontWeight="600">
@@ -121,8 +141,11 @@ export const HeaderHome = () => {
    
    </Box>
    <Navbar/>
-  <Body/>
+  
+   <Box position="absolute" dispaly="flex" justifyContent="center" alignItems="center" marginTop="2rem" zIndex="-1">
+      <Image transform="translateX(25%)" src="https://tpc.googlesyndication.com/simgad/10994949654465411539?"/>
 
+    </Box>
  
    </>
   )

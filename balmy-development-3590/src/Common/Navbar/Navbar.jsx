@@ -1,5 +1,5 @@
-import { Box, HStack, Image, Spacer } from "@chakra-ui/react";
-import { Link } from "@chakra-ui/react";
+import { Box, HStack, Image, Spacer, useColorMode } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 import React, { useState } from "react";
 import "./navbar.css";
@@ -12,6 +12,7 @@ import { TbLanguageHiragana } from "react-icons/tb";
 import { BsSearch } from "react-icons/bs";
 import { CardComponents } from "./CardComponents";
 import { data1 } from "../../Data/NavbarData/NavbarData1";
+import {FaSun} from "react-icons/fa"
 
 import { data2 } from "../../Data/NavbarData/NavbarData2";
 import { data3 } from "../../Data/NavbarData/NavbarData3";
@@ -26,6 +27,8 @@ export const Navbar = () => {
   const [card5, setCard5] = useState(false);
   const [card6, setCard6] = useState(false);
   const [card7, setCard7] = useState(false);
+  const {colorMode,toggleColorMode}=useColorMode()
+  const isDark=colorMode==="dark"
   return (
     <>
       <HStack
@@ -41,8 +44,10 @@ export const Navbar = () => {
           alignItems="center"
           gap="50px"
         >
-          <Box>
+          <Box  zIndex="1000">
+            <Link to="/"  style={{ textDecoration: "none" }}>
             <Image width="150px" src={Image1} alt="logo" />
+            </Link>
           </Box>
 
           <Box display="flex" alignItems="center" gap="20px">
@@ -53,7 +58,7 @@ export const Navbar = () => {
                 setCard1(false);
               }}
             >
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link to="/livescore" style={{ textDecoration: "none" }}>
                 Live Score
               </Link>
             </Box>
@@ -75,15 +80,18 @@ export const Navbar = () => {
                 Teams
               </Link>
             </Box>
+            
             <Box
               onMouseMove={() => setCard4(true)}
               onMouseOut={() => setCard4(false)}
-              zIndex="1000"
+               zIndex="1000"
+              
             >
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link  to="/news" style={{ textDecoration: "none" }}>
                 News
-              </Link>
+                </Link>
             </Box>
+         
             <Box
               onMouseMove={() => setCard5(true)}
               onMouseOut={() => setCard5(false)}
@@ -122,8 +130,13 @@ export const Navbar = () => {
             <Box>Fantasy</Box>
           </Box>
           <Box>Edition IN</Box>
-          <Box>
-            <TbMoon fontSize="25px" />
+          <Box  zIndex="2000">
+            {
+               !isDark?<TbMoon onClick={toggleColorMode} cursor="pointer" fontSize="25px" />:<FaSun onClick={toggleColorMode}  cursor="pointer" fontSize="25px" />
+
+            }
+           
+            
           </Box>
           <Box>
             <BiBell fontSize="25px" />

@@ -11,7 +11,7 @@ export const Header = () => {
       <Image transform="translateX(25%)" src="https://tpc.googlesyndication.com/simgad/10994949654465411539?"/>
 
     </Box>
-    <Body/>
+ 
     
     </>
   )
