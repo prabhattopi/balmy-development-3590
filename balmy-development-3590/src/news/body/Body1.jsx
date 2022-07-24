@@ -16,7 +16,7 @@ export const Body1 = ({data,loading,error}) => {
         {error&&<Error/>}
         {
             data.map(e=>(
-                <Body11news key={e.urlToImage} title={e.title} description={e.description} item={e}/>
+                <Body11news key={e.urlToImage} title={e.title} description={e.description} loading={loading} item={e}/>
             ))
         }
         
