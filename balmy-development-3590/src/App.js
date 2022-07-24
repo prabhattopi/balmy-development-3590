@@ -12,7 +12,7 @@ function App() {
     <Box>
       
   <AllRoutes/>
-  {/* <Footer/> */}
+  <Footer/>
     </Box>
   );
 }

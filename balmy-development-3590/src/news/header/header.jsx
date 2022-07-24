@@ -17,9 +17,10 @@ export const Headernews = () => {
       setError(false)
       try{
           let r=await axios.get(`https://newsapi.org/v2/everything?q=cricket&apiKey=${process.env.REACT_APP_CRI_KEY}`)
+      
+          setData(r.data.articles)
           setLoading(false)
           setError(false)
-          setData(r.data.articles)
        
       }
       catch(err){
@@ -32,6 +33,7 @@ export const Headernews = () => {
   }
   useEffect(() => {
       getData()
+      
    
   }, [])
 
