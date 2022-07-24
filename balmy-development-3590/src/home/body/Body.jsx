@@ -1,17 +1,46 @@
 import { Box,Image } from '@chakra-ui/react'
-import React from 'react'
+import React,{useState,useEffect} from 'react'
+// import { Header } from '../header/Header'
 import { Footer } from '../footer/Footer'
 import "./body.css"
 import { Body1 } from './Body1'
 import { Body2 } from './Body2'
 import { Body3 } from './Body3'
+import { HeaderHome } from '../header/HeaderHome'
+import axios from 'axios'
 export const Body = () => {
+  const [data,setData]=useState([])
+  const [loading,setLoading]=useState(false)
+  const [error,setError]=useState(false)
+
+  const getData=async()=>{
+      setLoading(true)
+      setError(false)
+      try{
+          let r=await axios.get(`https://newsapi.org/v2/everything?q=cricket&apiKey=${process.env.REACT_APP_CRI_KEY}`)
+          setLoading(false)
+          setError(false)
+          setData(r.data.articles)
+       
+      }
+      catch(err){
+          setLoading(false)
+       setError(true)
+
+      }
+ 
+
+  }
+  useEffect(() => {
+      getData()
+   
+  }, [])
+
+
   return (
     <>
-    <Box position="absolute" dispaly="flex" justifyContent="center" alignItems="center" marginTop="2rem" zIndex="-1">
-      <Image transform="translateX(25%)" src="https://tpc.googlesyndication.com/simgad/10994949654465411539?"/>
-
-    </Box>
+    <HeaderHome/>
+    
 
     <Box justifyContent="space-between" display="flex"  width="95%" gap="20px" margin="auto" marginTop="20rem" >
       <Box flex="1">
@@ -20,8 +49,8 @@ export const Body = () => {
       </Box>
 
 
-      <Box flex="2">
-     <Body2/>
+      <Box flex="2" display="flex" flexDirection="column" gap="20px">
+     <Body2 data={data} loading={loading} error={error}/>
       </Box>
 
       <Box flex="1">
