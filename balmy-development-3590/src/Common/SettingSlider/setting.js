@@ -6,9 +6,9 @@ export const Settings={
 
     dots: false,
     infinite: false,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     nextArrow:<SmapleNextArrow/>,
     prevArrow:<SmaplePrevArrow/>,
   responsive: [
@@ -16,7 +16,7 @@ export const Settings={
         breakpoint: 1500,
         settings: {
           slidesToShow:4,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: false,
           
@@ -35,7 +35,7 @@ export const Settings={
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 2,
             infinite:false,
             dots: false,
@@ -47,7 +47,7 @@ export const Settings={
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            initialslide:2
+            initialslide:1
         
           }
         },
